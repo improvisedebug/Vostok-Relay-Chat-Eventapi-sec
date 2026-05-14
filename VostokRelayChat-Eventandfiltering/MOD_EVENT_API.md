@@ -1,16 +1,12 @@
 # Safe Relay Chat — Mod Event API
 
-> Audience: mod authors who want to broadcast in-game events from their own mod through Safe Relay Chat.
-> Mod: **SafeRelayChat v1.7.5+** (priority `950-SafeRelayChat.vmz`)
-> Engine: Godot 4.6.2, GDScript
-
 ---
 
 ## Overview
 
 Safe Relay Chat exposes a small public API that lets other mods:
 
-1. **Register** named event categories at boot (e.g. "Improvised AI — patrol engaged").
+1. **Register** named event categories at boot (e.g. "Improvised AI — Being Hunted").
 2. **Emit** those events with placeholder substitution.
 3. Have each registered event automatically surface in **MCM → Safe Relay Chat → Mod Event Hooks** as two settings the user controls:
    - a **Bool toggle** (enable/disable broadcasting),
